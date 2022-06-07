@@ -16,7 +16,7 @@ public interface ICommonService<E extends Common, ID extends Serializable> {
     
     public E buscarE (ID id); 
     
-    public E editarE (E e);
+    public E editarE (ID id, E e);
     
  
     

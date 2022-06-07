@@ -13,6 +13,6 @@ public interface CommonController <E extends Common, ID extends Serializable>{
     public List <E> verE();
     public E buscarE(@PathVariable ID id); 
     public void borrarE (@PathVariable ID id);
-    public E editarE(@RequestBody E e); 
+    public E editarE(@PathVariable ID id, @RequestBody E e); 
   
 }
