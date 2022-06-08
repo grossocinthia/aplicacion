@@ -37,9 +37,7 @@ public abstract class CommonServiceImpl<E extends Common, ID extends Serializabl
     }
 
     @Override
-    public E editarE(ID id, E e) {
-        commonRepository.findById(id);
-        
+    public E editarE( E e) {
         commonRepository.save(e);
         return e;
     }

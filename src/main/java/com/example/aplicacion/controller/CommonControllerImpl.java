@@ -49,11 +49,10 @@ public abstract class CommonControllerImpl <E extends Common, S extends CommonSe
     }
    
      @PreAuthorize("hasRole('ADMIN')")
-    @PutMapping ("/editar/{id}")
+    @PutMapping ("/editar")
     @ResponseBody
-    public  E  editarE(@PathVariable Long id, @RequestBody E e){
+    public  E  editarE(@RequestBody E e){
 
-        Servicio.buscarE(id);
         Servicio.agregarE(e);
         return e;
           }
