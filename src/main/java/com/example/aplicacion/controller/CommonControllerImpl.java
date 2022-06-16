@@ -28,7 +28,7 @@ public abstract class CommonControllerImpl <E extends Common, S extends CommonSe
         
         
     }
-    @PreAuthorize("hasRole('ADMIN')")
+    
     @GetMapping ("/ver")
     @ResponseBody
     public List<E> verE(){
